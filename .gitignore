@@ -1,0 +1,13 @@
+﻿**/node_modules/
+**/target/
+**/dist/
+**/.vite/
+**/.vinxi/
+**/application.properties
+.env
+.env.*
+.vscode/
+.idea/
+*.iml
+.DS_Store
+Thumbs.db

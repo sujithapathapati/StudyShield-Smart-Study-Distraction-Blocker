@@ -1,0 +1,17 @@
+﻿<!doctype html>
+<html><head><meta charset="utf-8" /><style>
+  body{width:280px;margin:0;padding:16px;font:14px system-ui;background:#141f1a;color:#eef2e6}
+  h1{font-size:16px;margin:0 0 8px}
+  .badge{padding:8px 10px;border-radius:8px;font-weight:600;margin-bottom:10px;text-align:center}
+  .on{background:#b9e65a;color:#132017}.off{background:#2b3a33;color:#eef2e6}
+  ul{margin:8px 0;padding-left:18px;color:#cfe0d4}
+  small{color:#9fb0a5;display:block;margin-top:8px}
+</style></head><body>
+  <h1>🛡️ StudyShield</h1>
+  <div id="status" class="badge off">Checking sync…</div>
+  <div id="goal" style="font-size:12px;color:#b9e65a;margin-bottom:8px;"></div>
+  <strong>Active blocklist (from web app):</strong>
+  <ul id="list"></ul>
+  <small>Manage sites & start focus sessions at localhost:8080/app/blocks</small>
+  <script src="popup.js"></script>
+</body></html>

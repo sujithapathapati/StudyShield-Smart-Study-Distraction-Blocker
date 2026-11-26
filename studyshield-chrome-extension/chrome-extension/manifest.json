@@ -1,0 +1,15 @@
+﻿{
+  "manifest_version": 3,
+  "name": "StudyShield Blocker",
+  "version": "1.1.0",
+  "description": "Automatically syncs with StudyShield web app and blocks distracting sites during active focus sessions.",
+  "permissions": ["storage", "declarativeNetRequest", "tabs", "alarms"],
+  "host_permissions": ["<all_urls>"],
+  "background": { "service_worker": "background.js" },
+  "action": { "default_popup": "popup.html", "default_title": "StudyShield" },
+  "content_scripts": [
+    { "matches": ["*://*.youtube.com/*"], "js": ["youtube.js"], "run_at": "document_idle" },
+    { "matches": ["http://localhost:8080/*", "http://127.0.0.1:8080/*"], "js": ["sync.js"], "run_at": "document_idle" }
+  ],
+  "web_accessible_resources": [{ "resources": ["blocked.html"], "matches": ["<all_urls>"] }]
+}

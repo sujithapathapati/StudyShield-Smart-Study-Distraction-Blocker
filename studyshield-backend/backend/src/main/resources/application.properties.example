@@ -1,0 +1,4 @@
+﻿server.port=8081
+spring.data.mongodb.uri=mongodb+srv://<USERNAME>:<PASSWORD>@<CLUSTER>.mongodb.net/studyshield
+studyshield.jwt.secret=CHANGE_ME_TO_A_LONG_RANDOM_SECRET
+studyshield.gemini.api-key=YOUR_GEMINI_API_KEY
